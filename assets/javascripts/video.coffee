@@ -3,7 +3,7 @@ $ ->
 
   $('#video-button').bind 'click', ->
     window.show_video("#about-us-video-html")
-    reachGoal('video-viewed')
+    reachGoal('video_opened')
 
 
 window.show_video = (template_id) ->

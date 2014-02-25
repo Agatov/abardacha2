@@ -1,10 +1,5 @@
 $ ->
 
-  $('.order-button').on 'click', ->
-    $()
-
-
-
   $('#scroll-to-first-case').on 'click', ->
     $('body').animate({scrollTop: $('#first-case').offset().top}, 'slow')
     false
