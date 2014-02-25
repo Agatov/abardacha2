@@ -1,0 +1,42 @@
+#video
+.intro
+  .wrapper
+    .title
+      Мы создаем
+      = "<span class='bolder'>посадочные страницы</span>,"
+      %br
+      %span.bolder продуманные
+      до мелочей
+
+    .buttons
+      .button.video-button#video-button Видео о нас
+      .button.order-button#scroll-to-form-button Заявка на звонок
+
+  .favourite-projects
+    %a#scroll-to-first-case{href: '#'}
+      Избранные проекты
+
+
+.cases
+  = haml :'cases/volvo'
+  = haml :'cases/rzkm'
+  = haml :'cases/mimicase'
+  = haml :'cases/marketube'
+
+= haml :principles
+= haml :form
+
+
+.video-modal-bg
+.video-modal
+
+
+
+%script#about-us-video-html{type: 'template'}
+  %iframe{src: '//www.youtube.com/embed/WYWaxEEvaPI?rel=0&enablejsapi=1&autoplay=1',
+                          width: 853,
+                          height: 480, frameborder: 0}
+
+-#.footer
+  .wrapper
+    %a{href: '#'} Политика конфиденциальности

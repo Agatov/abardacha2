@@ -1,0 +1,27 @@
+.case.volvo#first-case
+  .wrapper.clearfix.relative.inheritance-height
+    .case-header.clearfix
+      .case-name
+        Детали Volvo
+      .case-tags
+        .case-tag.active{rel: :about}
+          О проекте
+        .case-tag{rel: :ideas}
+          Находки
+        .case-tag{rel: :result}
+          Результат
+
+    .case-desc
+      %p{anchor: :about}
+        Страница захвата для бизнеса по продаже б/у деталей с разборки.
+        Бизнес существует уже 3 года и нуждался в новых клиентах из интернета.
+
+      %p.hidden{anchor: :ideas}
+        Форма захвата, в которой предлагается реальная помощь для поиска детали.
+        Так же на результат повлияло наглядное сравнение цен на новые и б/y детали.
+
+      %p.hidden{anchor: :result}
+        В первый день после запуска Яндекс Директа, страница принесла 27 заявок.
+        По итогам первых двух недель работы, стоимость одной заявки составила 80 рублей.
+
+    %a.case-image.volvo{href: 'http://вседлявольво.рф', target: '_blank'}

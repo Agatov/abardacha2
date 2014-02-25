@@ -1,0 +1,30 @@
+.form#order-form
+  .wrapper
+
+    .form-thank-you
+      .thank-you-text
+        .bolder.big Спасибо!
+        Мы свяжемся с вами до
+        %span.bolder 18:00
+        ближайшего рабочего дня
+
+
+    .form-block
+      .form-title
+        Оставьте заявку на звонок
+        %br
+        и
+        = "<span class=bolder>узнайте цену</span>,"
+        = "<span class=bolder>сроки</span> и"
+        = "<span class=bolder>условия работы</span>"
+
+
+      %form
+        %input{type: :text, name: :username, placeholder: 'Как вас зовут?'}
+        %input{type: :text, name: :phone, placeholder: 'Ваш номер телефона'}
+        %input.last{type: :text, name: :email, placeholder: 'Ваш e-mail'}
+        %input.long{type: :text, name: :message, placeholder: 'Введите ваше сообщение'}
+        .add-message
+          Добавить сообщение
+        .button.centered#order-button
+          Отправить

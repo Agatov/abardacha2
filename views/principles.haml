@@ -1,0 +1,50 @@
+.principles
+  .wrapper
+    .principles-title
+      Наши "заморочки"
+
+    .principles-list
+      .principle{rel: :price}
+        .principle-name
+          Заморочка
+          %br
+          о цене
+      .principle{rel: :empty}
+        .principle-name
+          Заморочка
+          %br
+          о пустом месте
+      .principle{rel: :attention}
+        .principle-name
+          Заморочка
+          %br
+          о внимании
+
+      .principle{rel: :use}
+        .principle-name
+          Заморочка
+          %br
+          о пользе
+      .principle{rel: :pride}
+        .principle-name
+          Заморочка
+          %br
+          о гордости
+      .principle{rel: :candy}
+        .principle-name
+          Заморочка
+          %br
+          о конфетах
+      .principle-card
+
+        .close-icon
+
+        = haml :'principles/price'
+        = haml :'principles/empty'
+        = haml :'principles/attention'
+        = haml :'principles/use'
+        = haml :'principles/pride'
+        = haml :'principles/candy'
+
+
+

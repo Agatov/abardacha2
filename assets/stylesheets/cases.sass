@@ -1,0 +1,79 @@
+.case
+  widht: 100%
+  height: 630px
+  padding-top: 70px
+  position: relative
+
+  &.volvo
+    background: #033da0
+
+  &.rzkm
+    background: #f8aa00
+
+  &.mimicase
+    background: #48afb1
+
+  &.marketube
+    background: #2e9bd2
+
+
+  .case-header
+    font-family: 'Roboto-Thin'
+    .case-name
+      float: left
+      font-size: 55px
+      color: #fff
+    .case-tags
+      float: right
+      padding-top: 15px
+
+      .case-tag
+        float: left
+        margin-right: 30px
+        font-size: 24px
+        color: #fff
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.5)
+        cursor: pointer
+
+        &.active
+          color: #1b1f24
+          border-bottom: none
+
+
+  .case-desc
+    padding-top: 25px
+    p
+      font-family: 'Roboto-Regular'
+      font-size: 16px
+      color: #fff
+      line-height: 1.5
+
+      &.hidden
+        display: none
+
+
+  .case-image
+    position: absolute
+    left: 80px
+    bottom: 0px
+    width: 800px
+    height: 450px
+    box-shadow: 0 40px 40px rgba(0,0,0,0.3)
+
+    &.volvo
+      background: url('/images/cases/volvo.png') no-repeat
+      background-size: 100%
+
+    &.rzkm
+      background: url('/images/cases/rzkm.png') no-repeat
+      background-size: 100%
+
+    &.mimicase
+      background: url('/images/cases/mimicase.png') no-repeat
+      background-size: 100%
+
+    &.marketube
+      background: url('/images/cases/marketube.png') no-repeat
+      background-size: 100%
+
+
