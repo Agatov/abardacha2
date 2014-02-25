@@ -34,6 +34,10 @@ class Application < Sinatra::Base
     haml :index
   end
 
+  get '/simple' do
+    haml :simple
+  end
+
   post '/orders.json' do
 
     message = "#{params[:order][:username]}. #{params[:order][:phone]}. #{params[:order][:email]}"
