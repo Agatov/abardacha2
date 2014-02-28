@@ -1,0 +1,27 @@
+.case.kaleva#first-case
+  .wrapper.clearfix.relative.inheritance-height
+    .case-header.clearfix
+      .case-name
+        Окна Калева
+      .case-tags
+        .case-tag.active{rel: :about}
+          О проекте
+        .case-tag{rel: :ideas}
+          Находки
+        .case-tag{rel: :result}
+          Результат
+
+    .case-desc
+      %p{anchor: :about}
+        Сайт для официального диллера окон Калева.
+
+      %p.hidden{anchor: :ideas}
+        Ключевой фактор в продаже окон - выезд замерщика к клиенту. Только замерщик
+        может назвать конечную стоимость, которая будет прописана в договоре.
+        В этой работе мы максимально доступно донесли эту мысль до посетителей.
+
+
+      %p.hidden{anchor: :result}
+        Проект находится на стадии тестирования
+
+    .case-image.kaleva
